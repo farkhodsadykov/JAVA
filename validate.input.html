@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Enter your name</p>
+
+<input id="nameUser">
+<button type="button" onclick="nameFunction()">Submit</button>
+<p id="username"></p>
+
+
+<script>
+function nameFunction() {
+    var name, text;
+
+    name = document.getElementById("nameUser").value;
+
+    if ( name == "Frank" ) {
+        text = "Hello " + name;
+    } else {
+        text = "Wrong name ";
+    }
+
+    document.getElementById("username").innerHTML = text;
+}
+
+</script>
+
+</body>
+</html>
