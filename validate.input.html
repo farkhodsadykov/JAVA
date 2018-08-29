@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h2>JavaScript Can Validate Input</h2>
+<h2>JavaScript Validate Input</h2>
 
 <p>Enter your name</p>
 
@@ -14,13 +14,24 @@
 <script>
 function nameFunction() {
     var name, text;
-
+    var names = ['Frank', 'Jhon', 'Mark', 'Linda']
     name = document.getElementById("nameUser").value;
 
     if ( name == "Frank" ) {
+      // If user entered Frank will print back 'Hello Frank'
         text = "Hello " + name;
-    } else {
-        text = "Wrong name ";
+    }
+
+
+    if ( names.includes(name) ) {
+      // If user entered name inside list call 'names' will print back name
+        text = "Hello " + name;
+    }
+
+
+    else {
+      // if users entered name not includes in list and  not Frank will print back 'There is not name and name'
+        text = "There is no name :" + name;
     }
 
     document.getElementById("username").innerHTML = text;
