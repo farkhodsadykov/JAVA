@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FS Coding Class</title>
+  </head>
+  <body>
+    <h2>JavaScript loops</h2>
+    <p1 id="demo"></p>
+
+    <script>
+    var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    var text = "";
+    var i;
+    for (i = 0; i < cars.length; i++) {
+      //run forloop with variable 'i' and adds self until cars leght in this case 6 time
+
+      text += cars[i] + "<br>";
+      // each step variable 'i' will add item to text example 'BMW, VOLVO, Saab.....etc '
+    }
+
+    // In this line will add total text to html code id demo
+    document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
